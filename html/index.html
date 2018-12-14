@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/"/>
+  </head>
+  <body>
+    <style>
+
+
+      #fullscreen-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        z-index: -100;
+    }
+    </style>
+
+    <div class="container-fluid align-self-center" id="header">
+        <video loop muted autoplay id="fullscreen-bg">
+            <source src="../assets/promo.mp4" type="video/mp4">
+        </video>
+        <div class="row justify-content-center" style="height: 20vh;">
+            <div class="col text-center align-self-center">
+              <img src="../assets/logo.png" class="img-fluid" style="height: 10vh;">
+
+              </img>
+            </div>
+        </div><!-- row -->
+        <div class="row justify-content-center" style="height: 66vh;">
+            <div class="col-6 align-self-center text-center" id="form">
+              <form>
+                  <h5>Sign up:</h5>
+                  <input type="email" placeholder="E-mail"></input>
+                  <input type="submit"></input>
+              </form>
+            </div>
+        </div><!-- row -->
+        <div class="row justify-content-center" style="height: 7vh;">
+            <div class="col align-self-center text-center">
+              <button>Learn More</button>
+            </div>
+        </div><!-- row -->
+        <div class="row justify-content-center" style="height: 7vh;">
+            <div class="col no-gutters align-self-center text-center">
+              <button class="img-thumbnail" style="background-color: transparent; border: none">
+                  <img src="../assets/insta.png" class="img-fluid" style="width: 20px; height: 20px;"></img>
+              </button>
+            </div>
+        </div><!-- row -->
+    </div><!-- header -->
+
+    <div class="container">
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js"</script>
+    <script src="../js/popper.min.js"</script>
+    <script src="../js/bootstrap.min.js"</script>
+    <script src="https://js.stripe.com/v3/"></script>
+  </body>
+</html>
