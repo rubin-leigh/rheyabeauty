@@ -8,25 +8,41 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/"/>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="../js/script.js"></script>
   </head>
   <body>
     <style>
-
-
       #fullscreen-bg {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         overflow: hidden;
         z-index: -100;
     }
+
+    .inverted-button {
+      background-color: transparent;
+      color: white;
+      text-transform: lowercase;
+      border-width: 2px;
+      border-color: #ffffff;
+      font-variant: small-caps;
+      padding: 6px;
+      padding-right: 12px;
+      padding-left: 12px;
+      letter-spacing: 1px;
+    }
     </style>
 
     <div class="container-fluid align-self-center" id="header">
-        <video loop muted autoplay id="fullscreen-bg">
-            <source src="../assets/promo.mp4" type="video/mp4">
-        </video>
         <div class="row justify-content-center" style="height: 20vh;">
             <div class="col text-center align-self-center">
               <img src="../assets/logo.png" class="img-fluid" style="height: 10vh;">
@@ -34,18 +50,23 @@
               </img>
             </div>
         </div><!-- row -->
-        <div class="row justify-content-center" style="height: 66vh;">
-            <div class="col-6 align-self-center text-center" id="form">
+        <div class="row justify-content-center" style="height: 60vh;">
+          <video loop muted autoplay id="fullscreen-bg">
+              <source src="../assets/promo.mp4" type="video/mp4">
+          </video>
+            <div class="col-6 align-self-center text-left rounded" style="display: none; background-color: rgba(0,0,0,0.5); padding: 25px;" id="form">
               <form>
-                  <h5>Sign up:</h5>
-                  <input type="email" placeholder="E-mail"></input>
-                  <input type="submit"></input>
+                  <input style="padding: 5px;" type="email" placeholder="E-mail"></input>
+                  <button class="inverted-button" onclick="hideEmialForm()" style="float: right; display: block; border: none;">
+                    <h5><strong>X</strong></h5>
+                  </button><br/>
+                  <input class="inverted-button" type="submit" style="margin-top: 25px;"></input>
               </form>
             </div>
         </div><!-- row -->
         <div class="row justify-content-center" style="height: 7vh;">
             <div class="col align-self-center text-center">
-              <button>Learn More</button>
+              <button class="inverted-button" onclick="showEmailForm()">Learn More</button>
             </div>
         </div><!-- row -->
         <div class="row justify-content-center" style="height: 7vh;">
@@ -55,17 +76,24 @@
               </button>
             </div>
         </div><!-- row -->
+        <div class="row sticky-top justify-content-center" style="height: 6vh border: 2px solid white;">
+          <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                 <a class="nav-link" href="#header">HOME<span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">STORY</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">PRODUCT</a>
+               </li>
+             </ul>
+            </div>
+          </nav>
+        </div><!-- row -->
+        <div class="row" style="height: 200vh;"></div>
     </div><!-- header -->
-
-    <div class="container">
-
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../js/jquery.min.js"</script>
-    <script src="../js/popper.min.js"</script>
-    <script src="../js/bootstrap.min.js"</script>
-    <script src="https://js.stripe.com/v3/"></script>
   </body>
 </html>
