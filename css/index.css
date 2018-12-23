@@ -1,0 +1,72 @@
+body {
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+h2, h5 {
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+#fullscreen-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.inverted-button {
+  background-color: transparent;
+  color: white;
+  text-transform: lowercase;
+  border-width: 2px;
+  border-color: #ffffff;
+  font-variant: small-caps;
+  padding: 6px;
+  padding-right: 12px;
+  padding-left: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.underline-button {
+  text-transform: capitalize;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  border: none;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  line-height: 90%;
+  border-right: 18px solid transparent;
+  border-left: 18px solid transparent;
+  padding-right: 0px;
+  padding-left: 0px;
+  cursor: pointer;
+}
+
+.underline-button::after {
+  width: 80%;
+  left: 10%;
+}
+
+.input-inverted {
+  padding: 8px;
+  padding-top: 12px;
+  border: 3px solid white;
+  background-color: transparent;
+  margin-top: 15px;
+  width: 40%;
+  font-weight: lighter;
+}
+
+::placeholder {
+  color: rgba(255,255,255,1);
+  font-style: italic;
+  font-size: 1.5em;
+}

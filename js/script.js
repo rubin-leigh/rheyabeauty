@@ -2,11 +2,9 @@ var stripe = Stripe('pk_test_YWgCIeFFJkMPBXQwYiP55gyt');
 var elements = stripe.elements();
 
 function showEmailForm() {
-  var form = document.getElementById("form");
-  form.style.display = "block";
+  $("#form").fadeIn();
 }
 
-function hideEmialForm() {
-  var form = document.getElementById("form");
-  form.style.display = "none";
+function hideEmailForm() {
+  $('#form').fadeOut();
 }

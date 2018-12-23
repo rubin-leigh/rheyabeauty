@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/"/>
+    <link rel="stylesheet" type="text/css" href="../fonts/fonts.min.css" />
+    <link rel="stylesheet" href="../css/index.css"/>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -18,34 +19,10 @@
     <script src="../js/script.js"></script>
   </head>
   <body>
-    <style>
-      #fullscreen-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        z-index: -100;
-    }
-
-    .inverted-button {
-      background-color: transparent;
-      color: white;
-      text-transform: lowercase;
-      border-width: 2px;
-      border-color: #ffffff;
-      font-variant: small-caps;
-      padding: 6px;
-      padding-right: 12px;
-      padding-left: 12px;
-      letter-spacing: 1px;
-    }
-    </style>
-
     <div class="container-fluid align-self-center" id="header">
         <div class="row justify-content-center" style="height: 20vh;">
-            <div class="col text-center align-self-center">
-              <img src="../assets/logo.png" class="img-fluid" style="height: 10vh;">
+            <div class="col text-center align-self-center" style="top: 0px;">
+              <img src="../assets/logo.png" class="img-fluid" style="height: 5vh;">
 
               </img>
             </div>
@@ -54,13 +31,16 @@
           <video loop muted autoplay id="fullscreen-bg">
               <source src="../assets/promo.mp4" type="video/mp4">
           </video>
-            <div class="col-6 align-self-center text-left rounded" style="display: none; background-color: rgba(0,0,0,0.5); padding: 25px;" id="form">
+            <div class="col-6 align-self-center text-center rounded" style="display: none; background-color: rgba(0,0,0,0.5); padding: 25px;" id="form">
               <form>
-                  <input style="padding: 5px;" type="email" placeholder="E-mail"></input>
-                  <button class="inverted-button" onclick="hideEmialForm()" style="float: right; display: block; border: none;">
+                  <button class="inverted-button text-right" onclick="hideEmailForm()" style="position: absolute; top: 0; right: 0; border: none;
+                  margin: 10px;">
                     <h5><strong>X</strong></h5>
-                  </button><br/>
-                  <input class="inverted-button" type="submit" style="margin-top: 25px;"></input>
+                  </button>
+                  <h2 class="align-self-center" style="display: inline;"><strong>Sign up to learn more.</strong></h2><br/><br/>
+                  <h5 style="padding-right: 50px; padding-left: 50px;">We're building the perfect everyday mascara that's refillable and good for the planet. Delivered on the regular.</h5>
+                  <input class="input-inverted" type="email" placeholder="Your Email"></input><br/>
+                  <input class="underline-button" type="submit" style="margin-top: 25px;"></input>
               </form>
             </div>
         </div><!-- row -->
@@ -72,7 +52,7 @@
         <div class="row justify-content-center" style="height: 7vh;">
             <div class="col no-gutters align-self-center text-center">
               <button class="img-thumbnail" style="background-color: transparent; border: none">
-                  <img src="../assets/insta.png" class="img-fluid" style="width: 20px; height: 20px;"></img>
+                  <a href="https://www.instagram.com/rheas.beauty/"><img src="../assets/insta.png" class="img-fluid" style="width: 20px; height: 20px;"></img></a>
               </button>
             </div>
         </div><!-- row -->
