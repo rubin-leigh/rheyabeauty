@@ -1,0 +1,53 @@
+body {
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+  background-color: rgb(247, 216, 173);
+}
+
+.fullscreen-bg {
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.bg-background {
+  background-color: rgb(247, 216, 173);
+}
+
+button {
+  cursor: pointer;
+}
+
+.navbar-dark .navbar-nav > .nav-item > a,
+.navbar-dark .navbar-nav > .nav-item > a:hover,
+.navbar-dark .navbar-nav > .nav-item > a:focus {
+  color: rgba(195,108,46,0.5) !important; /* <—– change your color here*/
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.navbar-dark .navbar-nav > .active > a,
+.navbar-dark .navbar-nav > .active > a:hover,
+.navbar-dark .navbar-nav > .active > a:focus {
+  color: rgb(195,108,46) !important; /* <—– change your color here*/
+  background-color: transparent;
+}
+
+#get-started {
+  font-variant: small-caps;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5vw;
+  color: white;
+  weight: bold;
+  background-color: rgb(195,108,46);
+  display: inline-block;
+  text-align: center;
+  padding: 13px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
