@@ -12,7 +12,7 @@ h5 {
 	transform-origin: left bottom 0;
   float: left;
   font-size: 20px;
-  padding-left: 50px;
+  /*padding-top: 50px;*/
 }
 #accordion {
   list-style: none;
@@ -25,11 +25,11 @@ h5 {
 
 .list{
   float: left;
-  display: inline-block;
+  display: block;
   height: 75%;
-  width: 5vw;
+  /*width: 5vw;*/
   padding: 15px 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
   text-decoration: none;
   font-size: 16px;
   line-height: 1.5em;
@@ -45,7 +45,35 @@ h5 {
 }
 
 .active {
-  width: 75vw;
+  width: 95vw;
+}
+
+.default-vertical {
+  display: none;
+}
+
+.checkbox img {
+  height: 20px;
+}
+
+#confirmation {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: none;
+}
+
+#return_home {
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  padding: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .input-inverted {
@@ -75,4 +103,9 @@ h5 {
   vertical-align: top;
   margin-left: 0px;
   font-size: .9em;
+}
+
+.social {
+  bottom: 0;
+  right: 0;
 }

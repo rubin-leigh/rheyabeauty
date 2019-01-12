@@ -17,59 +17,91 @@
   <div class="align-self-center">
     <ul id='accordion'>
       <li class='list active'>
-        <div class='slide'>
-            <div id="main" class="row justify-content-center" style="height: 100vh; padding: 5%;">
+        <div class='slide' id="default-slide">
+            <div id="main" class="row justify-content-center" style="height: 100vh; padding: 3%;">
               <img src="../assets/background.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 75%;"/>
-              <div class="col-md-6 text-center align-self-center" style="top: 0px;">
-                <img src="../assets/logo.png" class="img-fluid" style="height: 30px;">
+              <div class="col-md-12 text-center align-self-center" style="top: 0px;">
+                <img src="../assets/logo.png" class="img-fluid align-self-center" style="height: 30px;">
                 </img><br/><br/><br/>
-                <h1><strong class="text-white" style="color:white;">Spend less time buying makeup<br/>and more time being a <span id="caption"></span><span id="cursor">I</span></strong></h1><br/>
-                <p class="text-white" style="line-height: 1.7em; font-size: 1.5em; color: white">
+              </div>
+              <div class="col-md-7 text-center align-self-center" style="padding-top: 5%">
+                <h1><strong class="text-white" style="color:white; padding-left: 10%; padding-top: 25%">Spend less time buying makeup<br/><span style="color:white; padding-left: 10%">and more time being a </span><span id="caption"></span><span id="cursor">I</span></strong></h1><br/>
+                <p class="text-white align-self-center" style="line-height: 1.4em; font-size: 1.3em; color: white; padding-left: 10%">
                   Refillable mascara that's conveniently delivered.<br/>Save time. Save money.
                 </p>
               </div>
-            <div class="col-md-6 text-center align-self-center" style="top: 0px;">
-              <img src="../assets/mascara.png" class="img-fluid" style="padding: 60px; height: 500px"></img>
+            <div class="col-md-5 text-center align-self-center" style="top: 0px; padding-top: -50%">
+              <img src="../assets/mascara.png" class="img-fluid" style="padding-top: 0px; padding-bottom: 20px; height: 500px"></img>
             </div>
+              <h5 class='vertical-text default-vertical' id="default-text"> + RHEYA MASCARA</h5>
         </div><!-- row -->
-        <h5 class='vertical-text'> + RHEYA MASCARA</h5>
       </li>
-      <li class='list'>
-        <div class='slide'>
-          <div class="row justify-content-center" style="height: 100vh; background-color: #FF7B72; padding: 4%;">
-            <h4 class="text-center" style="color: white">HOW IT WORKS</h4>
+      <li class='list' style="left: 5%">
+        <div class='slide' id="first-slide">
+          <div class="row justify-content-center" style="height: 100vh; padding: 3%;">
+            <img src="../assets/background.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 75%;"/>
+            <div class="col-md-12 text-center align-self-center" style="top: 0px;">
+              <h2 class="text-center" style="color: white;">HOW IT WORKS</h2>
+            </div>
             <div class="col-md-6 text-center align-self-center" style="top: -50px;">
-              <img src="assets/mascara.png" class="img-fluid align-left" style="padding: 60px; height: 500px">
+              <img src="assets/mascara.png" class="img-fluid align-left" style="padding-top: 0px; padding-bottom: 20px; height: 500px">
               </img>
             </div>
             <div class="col-md-6 text-left" style="top: 30px; padding-left: 100px">
-              <h4 class="text-white" style="color: white"><strong>Mascara that's designed for more.</strong></h4>
-              <p class="text-white" style="line-height: 1.7em; color: white; font-size: small; top: 0px">
-                With 2 Month Refill plans <i>starting</i> at <i>$10</i>.
+              <h1 class="text-white" style="color: white"><strong>Mascara that's designed for more.</strong></h1>
+              <p class="text-white" style="line-height: 1.5em; color: white; font-size: small; top: 0px">
+                <h4 style="color: white">With 2 Month Refill plans <i>starting</i> at <i>$10</i>.</h4>
               </p><br>
-              <p style="color: white; font-size:120%">&#10004 Your Case</p>
-              <p style="color: white; font-size:50%"> Refill this with replaceable mascara pods to help you save more.</p>
+
+              <div class="checkbox">
+                <img src="assets/Check.png" class="img-fluid align left"><span style="color: white; font-size:130%; padding-left: 10px; font-weight: bold">Your Case</span></img>
+                <p style="color: white; font-size:100%; padding-left: 38px"> Refill this with replaceable mascara pods to help you save more.</p>
+              </div>
               <br>
-              <p style="color: white; font-size:120%">&#10004 Your Brush</p>
-              <p style="color: white; font-size:50%"> Choose the best replaceable brush for your lashes.</p>
+              <div class="checkbox">
+                <img src="assets/Check.png" class="img-fluid align left"><span style="color: white; font-size:130%; padding-left: 10px; font-weight: bold">Your Brush</span></img>
+                <p style="color: white; font-size:100%; padding-left: 38px"> Choose the best replaceable brush for your lashes.</p>
+              </div>
               <br>
-              <p style="color: white; font-size:120%">&#10004 Your Schedule</p>
-              <p style="color: white; font-size:50">Skip, pause, or stop anytime.</p>
+              <div class="checkbox">
+                <img src="assets/Check.png" class="img-fluid align left"><span style="color: white; font-size:130%; padding-left: 10px; font-weight: bold">Your Schedule</span></img>
+                <p style="color: white; font-size:100%; padding-left: 38px"> Skip, pause, or stop anytime.</p>
+              </div>
             </div>
-        </div><!-- row -->
+              <h5 class='vertical-text' id="first-text"> + HOW IT WORKS</h5>
+          </div><!-- row -->
         </div>
-        <h5 class='vertical-text'> + HOW IT WORKS</h5>
       </li>
     </ul>
   </div>
 
-  <div class="row justify-content-center" style="height: 50vh; background-color: white;">
+  <div class="row justify-content-center" style="height: 50vh; background-color: white; position: absolute; bottom: 0px; width: 100%; height:25vh; padding-top: 2%">
     <div class="col text-center align-self-center" style="top: 0px; padding-bottom: 10px">
       <h3><strong class="text-uppercase" style="color: #FF7B72;">Be the first to know.</strong></h3>
-      <input class="input-inverted" type="email" placeholder="_enter your e-mail"></input>
-      <input class="submit-button" type="submit" value="GET EARLY ACCESS" style="margin-left: -4px; color: white;"></input>  
+        <form id="mc-form" action="https://rheyabeauty.us7.list-manage.com/subscribe/post?u=5fa4a61a99c40b05f88a4cf41&amp;id=33a0b494c6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <input class="input-inverted" type="email" placeholder="_enter your e-mail"></input>
+        <input class="submit-button" type="submit" value="GET EARLY ACCESS" style="margin-left: -4px; color: white;"></input>  
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5fa4a61a99c40b05f88a4cf41_33a0b494c6" tabindex="-1" value=""></div>
+      </form>
+      <div class="social">
+        <p style="color: #FF7B72"> EMAIL </p>
+      </div>
     </div>
+
   </div><!-- row -->
+  <div class="container-fluid align-self-center" id="confirmation"/>
+      <div class="row justify-content-center" style="height: 100%;">
+        <img src="../assets/background.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"/>
+        <div class="col-6 text-center align-self-center">
+          <img src="../assets/logo.png" class="img-fluid" style="height: 30px;"><br/><br/><br/>
+          <h1 style="font-size: 3.5em;"><strong class="text-white">Thank you for signing up!</strong></h1><br/>
+          <p class="text-white" style="line-height: 1.7em; font-size: 1.5em;">
+            You should receive an email from us shortly, if you have any questions, get in touch with us at hello@rheyabeauty.com  😁.
+          </p><br/><br/>
+          <button id="return_home">Return Home</button>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -79,6 +111,7 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
   <script  src="js/index.js"></script>
+  <script  src="js/script.js"></script>
 
 
 

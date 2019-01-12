@@ -8,7 +8,7 @@ $('#accordion').on('click', '.list', function() {
   }).children(':first')
   activeItem = this;
   $(activeItem).animate({
-    width: '75vw'
+    width: '95vw'
   }, {
     duration: 200,
     queue: false
@@ -83,3 +83,13 @@ function cursorAnimation() {
         opacity: 1
     }, 'fast', 'swing');
 }
+
+$("#first-slide").click(function(){
+  $("#first-text").toggle();
+  $("#default-text").toggle();
+});
+
+$("#default-slide").click(function(){
+  $("#default-text").toggle();
+  $("#first-text").toggle();
+});
