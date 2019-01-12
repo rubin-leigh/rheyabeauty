@@ -14,48 +14,72 @@ $('#accordion').on('click', '.list', function() {
     queue: false
   }).children(':first').removeClass('blur-filter');
 });
-/*
+
+var captionLength = 0;
+var caption = '';
+var captions = ['Student.', 'Mom.', 'Businesswoman.', 'Friend.', 'Traveler.', 'Doctor.', 'Artist.', 'Athlete.'];
+
+
 $(document).ready(function() {
-  createSlides();
+    setInterval ('cursorAnimation()', 600);
+    captionEl = $('#caption');
+    typeAndErase();
+    setInterval ('typeAndErase()', 5000);
 
+    $( "#submit_email" ).click(function() {
+      $( "#confirmation" ).fadeIn( "slow", function() {
+        // Animation complete
+      });
+    });
+
+    $( "#return_home" ).click(function() {
+      $( "#confirmation" ).fadeOut( "slow", function() {
+        // Animation complete
+      });
+    });
 });
-var slides = [{
-  src: 'http://t.wallpaperweb.org/wallpaper/nature/1440x1080/01319_glaciercanyon_1440x1080.jpg',
-  text: 'Qategory'
-}, {
-  src: 'http://t.wallpaperweb.org/wallpaper/nature/1440x1080/Punch_Bowl_Falls_Eagle_Creek_Wilderness_Area_Columbia_River_GorgeOregon_1440x1080.jpg',
-  text: 'Category'
-}, {
-  src: 'http://img1.mxstatic.com/wallpapers/3e458b261af3b86381a26f48b0367db4_large.jpeg',
-  text: 'Category'
-}, {
-  src: 'http://t.wallpaperweb.org/wallpaper/abstract/1440x1080/01355_smoke_1440x1080.jpg',
-  text: 'Category'
-}, {
-  src: 'http://wallpoper.com/images/00/42/82/71/cityscapes-architecture_00428271.jpg',
-  text: 'Category'
-}, {
-  src: 'http://www.dragonflyanimation.com/downloads/images/wallpaper/03-Dfly-Lambo-4x3-1440x1080.jpg',
-  text: 'Category'
-}]
-var createSlides = function() {
-  var doc = document;
-  var frag = doc.createDocumentFragment();
-  var len = slides.length;
-  for (var i = 0; i < len; i++) {
-    var li = frag.appendChild(doc.createElement('li'));
-    li.classList.add('list')
-    var img = li.appendChild(doc.createElement('img'));
-    img.src = slides[i].src;
-    img.setAttribute('class', 'slide blur-filter');
-    var header = li.appendChild(doc.createElement('h1'));
-    header.classList.add('vertical-text');
-    var text = header.appendChild(doc.createTextNode(slides[i].text));
-    doc.getElementById('accordion').appendChild(frag);
-  }
-  activeItem = $('#accordion').children(':first');
-  $(activeItem).addClass('active');
 
-  $('#accordion').children(':first').trigger('click');
+
+function type() {
+    captionEl.html(caption.substr(0, captionLength++));
+    if(captionLength < caption.length+1) {
+        setTimeout('type()', 50);
+    } else {
+        captionLength = 0;
+        caption = '';
+        caption = captionEl.html();
+        captionLength = caption.length;
+    }
 }
-*/
+function erase() {
+    captionEl.html(caption.substr(0, captionLength--));
+    if(captionLength >= 0) {
+        setTimeout('erase()', 50);
+    } else {
+        captionLength = 0;
+        caption = '';
+    }
+}
+
+function typeAndErase() {
+  caption = captions[Math.floor(Math.random()*captions.length)];
+  type();
+  setTimeout(erase, 3000);
+}
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+function cursorAnimation() {
+    $('#cursor').animate({
+        opacity: 0
+    }, 'fast', 'swing').animate({
+        opacity: 1
+    }, 'fast', 'swing');
+}

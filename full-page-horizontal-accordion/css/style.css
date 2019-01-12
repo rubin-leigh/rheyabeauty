@@ -17,14 +17,16 @@ h5 {
 #accordion {
   list-style: none;
   padding: 0;
-  height: 75vh;
+  height: 75%;
+  width: 100%;
+  padding: 0px;
   overflow: hidden;
 }
 
 .list{
   float: left;
-  display: block;
-  height: 100%;
+  display: inline-block;
+  height: 75%;
   width: 5vw;
   padding: 15px 0;
   overflow: hidden;
@@ -38,7 +40,8 @@ h5 {
   /*border-right: 1px solid #fff;*/
   float: left;
   margin: -15px 15px 0 0;
-  position: relative;
+  position: absolute;
+  width: 95%;
 }
 
 .active {
