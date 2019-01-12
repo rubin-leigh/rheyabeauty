@@ -2,6 +2,13 @@ body {
   font-family: 'Proxima Nova', Georgia, sans-serif;
 }
 
+#main {
+  background-color: transparent;
+  background-image: image("../assets/background.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
 .input-inverted {
   padding: 4px;
   border: 3px solid #d16614;

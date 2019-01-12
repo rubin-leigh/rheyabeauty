@@ -16,19 +16,18 @@
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="https://js.stripe.com/v3/"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/landing.js"></script>
   </head>
   <body>
     <div class="container-fluid align-self-center" id="header">
-        <div class="row justify-content-center" style="height: 75vh; background-color: #ff6039; padding: 5%;">
+        <div id="main" class="row justify-content-center" style="height: 75vh; padding: 5%;">
+            <img src="../assets/background.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 75%;"/>
             <div class="col-md-6 text-center align-self-center" style="top: 0px;">
               <img src="../assets/logo.png" class="img-fluid" style="height: 30px;">
               </img><br/><br/><br/>
-              <h1><strong class="text-uppercase text-white">Rheya mascara is coming.</strong></h1><br/>
+              <h1><strong class="text-white">Spend less time buying makeup and more time being a <span id="caption"></span><span id="cursor">I</span></strong></h1><br/>
               <p class="text-white" style="line-height: 1.7em;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus lacus, tincidunt in dapibus non, dictum sit amet elit.
-                Nullam molestie, lorem eu egestas tincidunt, ipsum odio dapibus ex, vel elementum lorem turpis sit amet odio.
-                Donec lobortis odio eu sagittis pretium.  Quisque sit amet tempus augue, ut consectetur massa. Morbi eget consectetur magna.
+                Refillable mascara that's conveniently delivered. Save time. Save money.
               </p>
             </div>
             <div class="col-md-6 text-center align-self-center" style="top: 0px;">
@@ -36,13 +35,13 @@
               </img>
             </div>
         </div><!-- row -->
-        <div class="row justify-content-center" style="height: 25vh; background-color: #fdd6a7;">
+        <div class="row justify-content-center" style="height: 25vh; background-color: #ffffff;">
             <div class="col text-center align-self-center" style="top: 0px;">
               <img src="../assets/r_orange.png" class="img-fluid" style="height: 30px;">
               </img><br/><br/>
               <h2><strong class="text-uppercase" style="color: #d16614;">Be the first to know.</strong></h2><br/>
-              <input class="input-inverted" type="email" placeholder="e-mail"></input>
-              <input class="submit-button" type="submit" value="GET EARLY ACCESS" style="margin-left: -4px;"></input>
+              <input id="email_address" class="input-inverted" type="email" name="email" placeholder="e-mail"></input>
+              <input onclick="subscribe()" id="submit_email" class="submit-button" type="submit" value="GET EARLY ACCESS" style="margin-left: -4px;"></input>
             </div>
         </div><!-- row -->
     </div><!-- header -->
