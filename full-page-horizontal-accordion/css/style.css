@@ -1,0 +1,75 @@
+body {
+  overflow: hidden;
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+h5 {
+  color: white;
+  position: absolute;
+  cursor: default;
+}
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+  float: left;
+  font-size: 20px;
+  padding-left: 50px;
+}
+#accordion {
+  list-style: none;
+  padding: 0;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.list{
+  float: left;
+  display: block;
+  height: 100%;
+  width: 5vw;
+  padding: 15px 0;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.slide {
+  border: none;
+  /*border-right: 1px solid #fff;*/
+  float: left;
+  margin: -15px 15px 0 0;
+  position: relative;
+}
+
+.active {
+  width: 75vw;
+}
+
+.input-inverted {
+  padding: 4px;
+  border: 3px solid #FF7B72;
+  background-color: transparent;
+  width: 25%;
+  height: 5vh;
+  font-weight: lighter;
+  color: #FF7B72;
+  font-size: 1.1em;
+  margin-right: 0px;
+  vertical-align: top;
+}
+
+::placeholder {
+  color: #FF7B72;
+  font-size: 0.8em;
+}
+
+.submit-button {
+  background-color: #FF7B72;
+  border: 3px solid #FF7B72;
+  height: 5vh;
+  width: 150px;
+  color: white;
+  vertical-align: top;
+  margin-left: 0px;
+  font-size: .9em;
+}
