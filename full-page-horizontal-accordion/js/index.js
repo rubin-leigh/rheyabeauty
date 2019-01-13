@@ -40,12 +40,12 @@ $(document).ready(function() {
       }).children(':first').removeClass('blur-filter');
     });
 
-    $("#first-text").click(function(){
+    $("#first-slide").click(function(){
       $("#first-text").toggle();
       $("#default-text").toggle();
     });
 
-    $("#default-text").click(function(){
+    $("#default-slide").click(function(){
       $("#default-text").toggle();
       $("#first-text").toggle();
     });
