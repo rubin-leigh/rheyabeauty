@@ -15,8 +15,10 @@ h5 {
   cursor: pointer;
   position: absolute;
   float: left;
-  left: 0;
+  left: 10px;
+  top: 5%;
   padding: 20px;
+  margin-bottom: 100%
   /*padding-top: 50px;*/
 }
 #accordion {
@@ -52,7 +54,7 @@ h5 {
 }
 
 .default-vertical {
-  display: none;
+  /*display: none;*/
 }
 
 .checkbox img {
@@ -108,10 +110,20 @@ h5 {
   font-size: .9em;
 }
 
-.social {
+.social1 {
   position: fixed;
   cursor: pointer;
   right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+}
+
+.social2 {
+  position: fixed;
+  cursor: pointer;
+  right: 40px;
   bottom: 0;
   width: 50px;
   height: 50px;
