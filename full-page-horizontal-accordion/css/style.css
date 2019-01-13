@@ -12,6 +12,7 @@ h5 {
 	transform-origin: left bottom 0;
   float: left;
   font-size: 20px;
+  cursor: pointer;
   /*padding-top: 50px;*/
 }
 #accordion {
@@ -106,6 +107,10 @@ h5 {
 }
 
 .social {
-  bottom: 0;
-  right: 0;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  bottom: 5%;
+  width: 20px;
+  height: 20px;
 }
