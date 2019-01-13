@@ -10,7 +10,7 @@ h5 {
 .vertical-text {
 	transform: rotate(90deg);
 	transform-origin: left bottom 0;
-  float: left;
+
   font-size: 20px;
   cursor: pointer;
   /*padding-top: 50px;*/
@@ -37,8 +37,6 @@ h5 {
 }
 
 .slide {
-  border: none;
-  /*border-right: 1px solid #fff;*/
   float: left;
   margin: -15px 15px 0 0;
   position: absolute;
@@ -92,7 +90,7 @@ h5 {
 
 ::placeholder {
   color: #FF7B72;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .submit-button {
@@ -107,10 +105,11 @@ h5 {
 }
 
 .social {
-  position: absolute;
+  position: fixed;
   cursor: pointer;
-  right: 5%;
-  bottom: 5%;
-  width: 20px;
-  height: 20px;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
 }

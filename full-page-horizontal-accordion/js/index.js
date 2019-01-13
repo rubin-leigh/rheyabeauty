@@ -2,7 +2,7 @@
 
 var captionLength = 0;
 var caption = '';
-var captions = ['Student.', 'Mom.', 'Businesswoman.', 'Friend.', 'Traveler.', 'Doctor.', 'Artist.', 'Athlete.'];
+var captions = [' Student.', ' Mom.', ' Businesswoman.', ' Friend.', ' Traveler.', ' Doctor.', 'n Artist.', 'n Athlete.'];
 
 
 $(document).ready(function() {

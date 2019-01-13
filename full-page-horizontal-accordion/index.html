@@ -6,7 +6,8 @@
   <title>Full Page Horizontal Accordion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'> -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css"/>
   <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="../fonts/fonts.min.css" />
@@ -17,29 +18,30 @@
   <div class="align-self-center">
     <ul id='accordion'>
       <li class='list active'>
-        <div class='slide' id="default-slide">
-            <div id="main" class="row justify-content-center" style="height: 100vh; padding: 3%;">
-              <img src="../assets/background.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 75%;"/>
+        <div class='slide' id="default-slide" style="border-right: 1px solid #fff;">
+            <div id="main" class="row justify-content-center" style="height: 75vh;">
+              <img src="../assets/background.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"/>
               <div class="col-md-12 text-center align-self-center" style="top: 0px;">
-                <img src="../assets/logo.png" class="img-fluid align-self-center" style="height: 30px;">
-                </img><br/><br/><br/>
+                <img src="../assets/logo.png" class="img-fluid align-self-center" style="height: 30px; margin-top: 50px;">
+                </img>
               </div>
-              <div class="col-md-7 text-center align-self-center" style="padding-top: 5%">
-                <h1><strong class="text-white" style="color:white; padding-left: 10%; padding-top: 25%">Spend less time buying makeup<br/><span style="color:white; padding-left: 10%">and more time being a </span><span id="caption"></span><span id="cursor">I</span></strong></h1><br/>
-                <p class="text-white align-self-center" style="line-height: 1.4em; font-size: 1.3em; color: white; padding-left: 10%">
+              <div class="col-md-7 text-center align-self-center">
+                <h1><strong class="text-white" style="color:white;">Spend less time buying makeup<br/><span style="color:white;">and more time being a</span><span id="caption"></span><span id="cursor">I</span></strong></h1><br/>
+                <p class="text-white align-self-center" style="line-height: 1.4em; font-size: 1.3em; color: white;">
                   Refillable mascara that's conveniently delivered.<br/>Save time. Save money.
                 </p>
               </div>
-            <div class="col-md-5 text-center align-self-center" style="top: 0px; padding-top: -50%">
-              <img src="../assets/mascara.png" class="img-fluid" style="padding-top: 0px; padding-bottom: 20px; height: 500px"></img>
-            </div>
-              <h5 class='vertical-text default-vertical' id="default-text"> + RHEYA MASCARA</h5>
-        </div><!-- row -->
+              <div class="col-md-5 text-center align-self-center" style="top: 0px;">
+                <img src="../assets/mascara.png" class="img-fluid" style="padding: 50px;"></img>
+              </div>
+              <h5 class='float-left text-white vertical-text default-vertical' id="default-text"> + RHEYA MASCARA</h5>
+          </div><!-- row -->
+        </div>
       </li>
       <li class='list' style="left: 5%">
-        <div class='slide' id="first-slide">
-          <div class="row justify-content-center" style="height: 100vh; padding: 3%;">
-            <img src="../assets/background.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 75%;"/>
+        <div class='slide' id="first-slide" style="border-left: 1px solid #fff;">
+          <div class="row justify-content-center" style="height: 75vh; padding: 3%;">
+            <img src="../assets/background.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"/>
             <div class="col-md-12 text-center align-self-center" style="top: 0px;">
               <h2 class="text-center" style="color: white;">HOW IT WORKS</h2>
             </div>
@@ -68,7 +70,7 @@
                 <p style="color: white; font-size:100%; padding-left: 38px"> Skip, pause, or stop anytime.</p>
               </div>
             </div>
-              <h5 class='vertical-text' id="first-text"> + HOW IT WORKS</h5>
+            <h5 class='text-white vertical-text' id="first-text"> + HOW IT WORKS</h5>
           </div><!-- row -->
         </div>
       </li>
@@ -84,7 +86,7 @@
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5fa4a61a99c40b05f88a4cf41_33a0b494c6" tabindex="-1" value=""></div>
       </form>
       <div class="social">
-        <a href="insta"><img src="../assets/insta_color.png"></img></a>
+        <a href="https://www.instagram.com/rheyabeauty/"><img width="100%" height="100%" src="../assets/insta_color.png"></img></a>
       </div>
     </div>
 
@@ -92,8 +94,8 @@
 </div>
 <div class="container-fluid align-self-center" id="confirmation">
   <div class="row justify-content-center" style="height: 100%;">
-    <img src="../assets/background.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"/>
-    <div class="col-6 text-center align-self-center">
+    <img src="../assets/background.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 9;"/>
+    <div class="col-6 text-center align-self-center" style="z-index: 10;">
       <img src="../assets/logo.png" class="img-fluid" style="height: 30px;"><br/><br/><br/>
       <h1 style="font-size: 3.5em;"><strong class="text-white">Thank you for signing up!</strong></h1><br/>
       <p class="text-white" style="line-height: 1.7em; font-size: 1.5em;">
