@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/Lite/pen/bVQaKg.
+Landing page for rheyabeauty.com
 
  
