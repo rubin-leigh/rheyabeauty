@@ -38,14 +38,14 @@ $(document).ready(function() {
       $(activeItem).animate({
         width: '5vw'
       }, {
-        duration: 300,
+        duration: 295,
         queue: false,
       }).children(':first')
       activeItem = this;
       $(activeItem).animate({
         width: '95vw'
       }, {
-        duration: 300,
+        duration: 295,
         queue: false
       }).children(':first').removeClass('blur-filter');
     });
