@@ -2,7 +2,7 @@
 
 var captionLength = 0;
 var caption = '';
-var captions = [' Student.', ' Mom.', ' Businesswoman.', ' Friend.', ' Traveler.', ' Doctor.', 'n Artist.', 'n Athlete.'];
+var captions = [' student.', ' mom.', ' businesswoman.', ' friend.', ' traveler.', ' doctor.', 'n artist.', 'n athlete.'];
 
 
 $(document).ready(function() {
@@ -23,6 +23,16 @@ $(document).ready(function() {
       });
     });
 
+    $("#rheya_mascara").click(function(){
+      $("#rheya_mascara").hide();
+      $("#how_it_works").show();
+    });
+
+    $("#how_it_works").click(function(){
+      $("#how_it_works").hide();
+      $("#rheya_mascara").show();
+    });
+
     activeItem = $('#accordion').children(':first');
     $('#accordion').on('click', '.list', function() {
       $(activeItem).animate({
@@ -40,15 +50,7 @@ $(document).ready(function() {
       }).children(':first').removeClass('blur-filter');
     });
 
-    $("#first-slide").click(function(){
-      $("#first-text").toggle();
-      $("#default-text").toggle();
-    });
 
-    $("#default-slide").click(function(){
-      $("#default-text").toggle();
-      $("#first-text").toggle();
-    });
 });
 
 
