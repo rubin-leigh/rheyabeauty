@@ -177,4 +177,10 @@ h5 {
  body {
    overflow-y: scroll;
  }
+ .input-inverted {
+   width: 75vw;
+ }
+ .submit-button {
+   width: 50vw;
+ }
 }
