@@ -1,3 +1,7 @@
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
 body {
   overflow: hidden;
   font-family: proxima-nova, Georgia, sans-serif;
@@ -24,7 +28,6 @@ h5 {
 #accordion {
   list-style: none;
   padding: 0;
-  height: 75%;
   width: 100%;
   padding: 0px;
   overflow: hidden;
@@ -66,6 +69,10 @@ h5 {
   top: 0; left: 0;
   width: 100%; height: 100%;
   display: none;
+}
+
+#slide_1_text {
+  padding-bottom: 25%; padding-left: 10%; padding-top: 10%;
 }
 
 #return_home {
@@ -128,4 +135,46 @@ h5 {
   width: 50px;
   height: 50px;
   padding: 15px;
+}
+
+@media screen and (max-width: 768px){
+ #rheya_mascara {
+   display: none;
+ }
+ #how_it_works{
+   display: none;
+ }
+ #main {
+   height: 100vh;
+ }
+ #content {
+   overflow-y: scroll;
+ }
+ .tab {
+   border-right: 0px solid #fff;
+   border-left: 0px solid #fff;
+ }
+ #accordion {
+   overflow: scroll;
+ }
+ #content-2 {
+   display: block;
+   left: -1px;
+   top: 10vh;
+   padding-bottom: 75vh;
+   border-top: 1px solid #fff:
+ }
+ #accordion.list {
+   width: 100vw;
+ }
+ #slide_1_text {
+   padding-bottom: 0%;
+ }
+ .slide{
+   position: relative;
+   width: 100%;
+ }
+ body {
+   overflow-y: scroll;
+ }
 }
