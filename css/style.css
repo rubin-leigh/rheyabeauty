@@ -137,6 +137,10 @@ h5 {
   padding: 15px;
 }
 
+#mascara_2 {
+  top: 50px; padding-left: 70px;
+}
+
 @media screen and (max-width: 768px){
  #rheya_mascara {
    display: none;
@@ -145,7 +149,7 @@ h5 {
    display: none;
  }
  #main {
-   height: 100vh;
+   height: 120vh;
  }
  #content {
    overflow-y: scroll;
@@ -160,8 +164,8 @@ h5 {
  #content-2 {
    display: block;
    left: -1px;
-   top: 10vh;
-   padding-bottom: 75vh;
+   top: 16vh;
+   padding-bottom: 55vh;
    border-top: 1px solid #fff:
  }
  #accordion.list {
@@ -182,5 +186,8 @@ h5 {
  }
  .submit-button {
    width: 50vw;
+ }
+ #mascara_2 {
+   top: -100px;
  }
 }
