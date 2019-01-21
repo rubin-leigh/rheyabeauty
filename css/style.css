@@ -153,6 +153,7 @@ h5 {
  }
  #content {
    overflow-y: scroll;
+   overflow-x: hidden;
  }
  .tab {
    border-right: 0px solid #fff;
@@ -160,6 +161,7 @@ h5 {
  }
  #accordion {
    overflow: scroll;
+   overflow-x: hidden;
  }
  #content-2 {
    display: block;
